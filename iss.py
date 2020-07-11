@@ -7,7 +7,7 @@ import requests
 import time
 import turtle
 
-iss_icon = 'iss.gif'
+iss_item = 'iss.gif'
 world_map = 'map.gif'
 base_url = 'http://api.open-notify.org'
 
@@ -46,9 +46,9 @@ def map_iss(lat, lon):
     screen.bgpic(world_map)
     screen.setworldcoordinates(-180, -90, 180, 90)
 
-    screen.register_shape(iss_icon)
+    screen.register_shape(iss_item)
     iss = turtle.Turtle()
-    iss.shape(iss_icon)
+    iss.shape(iss_item)
     iss.setheading(90)
     iss.penup()
     iss.goto(lon, lat)  # note the lon and lat are in reverse order here
